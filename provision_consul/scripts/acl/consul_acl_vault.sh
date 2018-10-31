@@ -12,8 +12,8 @@ echo "   ##  Make sure to set the following environment variables before running
   ##          CONSUL_ADDR=${CONSUL_ADDR}
   ##          CONSUL_HTTP_TOKEN=${CONSUL_HTTP_TOKEN}"
 
-export CONSUL_ADDR='http://127.0.0.1:8500'
-export CONSUL_HTTP_TOKEN=$(cat "/vagrant/${HOSTNAME}_consul_http_token.txt")
+export CONSUL_ADDR='http://127.0.0.1:8500' ##Add your consul address
+export CONSUL_HTTP_TOKEN=$(cat "/vagrant/${HOSTNAME}_consul_http_token.txt") ##Add your Consul HTTP Token.
 echo $CONSUL_HTTP_TOKEN
 echo $CONSUL_ADDR
 
